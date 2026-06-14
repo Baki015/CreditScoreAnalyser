@@ -1,6 +1,6 @@
-# CreditGuard AI - Digitalni kreditni službenik
+# CreditScoreAnalyser - Digitalni kreditni službenik
 
-CreditGuard AI je web aplikacija za procjenu finansijskog rizika kompanija. Sistem kombinuje klasični Altman Z-Score pristup i jednostavni model mašinskog učenja kako bi kreditnom analitičaru dao brzu procjenu da li je kompanija stabilna, u sivoj zoni ili rizična.
+CreditScoreAnalyser je web aplikacija za procjenu finansijskog rizika kompanija. Sistem kombinuje klasični Altman Z-Score pristup i jednostavni model mašinskog učenja kako bi kreditnom analitičaru dao brzu procjenu da li je kompanija stabilna, u sivoj zoni ili rizična.
 
 ## Problem
 
@@ -212,4 +212,4 @@ Kompanija sa visokim dugom, slabom profitabilnošću i negativnim obrtnim kapita
 
 ## Zaključak
 
-CreditGuard AI pokazuje kako se tradicionalna finansijska analiza može povezati sa mašinskim učenjem i web aplikacijom. Alat je koristan za brzu preliminarnu procjenu rizika i može se proširiti dodatnim datasetima, naprednijim modelima, SHAP objašnjenjima i deploy-om na cloud platformu.
+CreditScoreAnalyser pokazuje kako se tradicionalna finansijska analiza može povezati sa mašinskim učenjem i web aplikacijom. Alat je koristan za brzu preliminarnu procjenu rizika i može se proširiti dodatnim datasetima, naprednijim modelima, SHAP objašnjenjima i deploy-om na cloud platformu.
