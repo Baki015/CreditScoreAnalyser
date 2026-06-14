@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CreditGuard AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div>
+        <p class="eyebrow">Digitalni kreditni službenik</p>
+        <h1>CreditGuard AI</h1>
+        <p class="lead">Web alat za procjenu finansijskog rizika kompanija pomoću Altman Z-Score metode i mašinskog učenja.</p>
+      </div>
+      <div class="status" id="apiStatus">Provjera API-ja...</div>
+    </header>
+
+    <section class="grid">
+      <div class="panel">
+        <h2>Analiza jedne kompanije</h2>
+        <form id="companyForm" class="form">
+          <label>Naziv kompanije<input id="company_name" value="Test Company" required /></label>
+          <label>Working Capital<input id="working_capital" type="number" value="200000" required /></label>
+          <label>Total Assets<input id="total_assets" type="number" value="1000000" required /></label>
+          <label>Retained Earnings<input id="retained_earnings" type="number" value="150000" required /></label>
+          <label>EBIT<input id="ebit" type="number" value="120000" required /></label>
+          <label>Market Value of Equity<input id="market_value_equity" type="number" value="800000" required /></label>
+          <label>Total Liabilities<input id="total_liabilities" type="number" value="400000" required /></label>
+          <label>Sales<input id="sales" type="number" value="900000" required /></label>
+          <button type="submit">Analiziraj kompaniju</button>
+        </form>
+      </div>
+
+      <div class="panel result" id="singleResult">
+        <h2>Rezultat</h2>
+        <p class="muted">Unesi podatke i pokreni analizu.</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="sectionTitle">
+        <div>
+          <h2>Portfolio analiza</h2>
+          <p class="muted">Učitaj CSV ili Excel fajl sa više kompanija.</p>
+        </div>
+        <input id="fileInput" type="file" accept=".csv,.xlsx" />
+      </div>
+      <div id="portfolioSummary" class="summary"></div>
+      <div id="riskBars" class="bars"></div>
+      <div class="tableWrap">
+        <table id="portfolioTable"></table>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

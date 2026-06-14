@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+*.pyc
+backend/credit_model.pkl
+.env
+.DS_Store
