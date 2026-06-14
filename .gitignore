@@ -4,3 +4,4 @@ __pycache__/
 backend/credit_model.pkl
 .env
 .DS_Store
+.idea/
